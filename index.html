@@ -3,7 +3,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>CMS</title>
+    <title>Bootstrap CMS</title>
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
       rel="stylesheet"
@@ -14,9 +14,67 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.3/font/bootstrap-icons.css"
     />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;400;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
+    <div
+      class="main-left d-flex justify-content-center align-items-center bg-dark"
+    >
+      <div
+        class="panel border border-dark rounded-4 overflow-hidden"
+        style="height: 94vh; width: 1600px"
+      >
+        <div class="row h-100 mx-0">
+          <div
+            class="col-2 panel-left d-flex flex-column gx-3 align-items-center justify-content-evenly bg-secondary"
+          >
+            <section
+              class="time text-center text-light d-flex flex-column justify-content-center align-items-center"
+            >
+              <p class="mb-1 mt-3 text-uppercase">Wednesday</p>
+              <p class="h1 fw-bold">3:45</p>
+              <p class="mb-0">25.06.2022</p>
+            </section>
+            <section class="menu text-center py-3">
+              <a
+                href="index.html"
+                class="active text-decoration-none text-white d-block border rounded-4 px-5 py-3 mb-3"
+              >
+                <i class="bi bi-list fs-1"></i>
+                <p class="text-uppercase mb-2">Main page</p>
+              </a>
+              <a
+                href="posts.html"
+                class="text-decoration-none text-white d-block border rounded-4 px-5 py-3 mb-3"
+              >
+                <i class="bi bi-collection fs-2"></i>
+                <p class="text-uppercase mb-2">Posts</p>
+              </a>
+              <a
+                href="users.html"
+                class="text-decoration-none text-white d-block border rounded-4 px-5 py-3"
+              >
+                <i class="bi bi-people-fill fs-1"></i>
+                <p class="text-uppercase mb-2">Users</p>
+              </a>
+            </section>
+            <section
+              class="mini-footer d-flex flex-column justify-content-center align-items-center"
+            >
+              <p class="mb-0">Bootstrap CMS</p>
+              <p class="mb-0">&copy Copyright 2022</p>
+            </section>
+          </div>
+          <div class="col-10 panel-right"></div>
+        </div>
+      </div>
+    </div>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
