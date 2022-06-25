@@ -101,6 +101,67 @@
                 </div>
                 <!-- from Apexcharts -->
                 <div id="chart" class="graph py-5 text-dark"></div>
+                <section class="last-posts py-5 text-start">
+                  <div class="d-flex justify-content-between">
+                    <h4>Last posts:</h4>
+                    <div class="dropdown">
+                      <button
+                        class="btn btn-outline-light dropdown-toggle"
+                        type="button"
+                        id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown"
+                        aria-expanded="false"
+                      >
+                        Sort by
+                      </button>
+                      <ul
+                        class="dropdown-menu"
+                        aria-labelledby="dropdownMenuButton1"
+                      >
+                        <li>
+                          <a class="dropdown-item" href="#">Topics</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Users</a>
+                        </li>
+                        <li>
+                          <a class="dropdown-item" href="#">Time</a>
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                  <div class="py-3">
+                    <table class="table text-light">
+                      <thead>
+                        <tr>
+                          <th scope="col">#</th>
+                          <th scope="col">Post title</th>
+                          <th scope="col">User</th>
+                          <th scope="col">Day</th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <th scope="row">1</th>
+                          <td>Mark</td>
+                          <td>Otto</td>
+                          <td>@mdo</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">2</th>
+                          <td>Jacob</td>
+                          <td>Thornton</td>
+                          <td>@fat</td>
+                        </tr>
+                        <tr>
+                          <th scope="row">3</th>
+                          <td colspan="2">Larry the Bird</td>
+                          <td>@twitter</td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </section>
               </div>
               <div class="col-3"></div>
             </div>
