@@ -4,7 +4,7 @@ body {
 
 .main-left {
   width: 1800px;
-  height: 100vh;
+  height: 1200px;
 }
 
 .panel-right {
@@ -16,7 +16,9 @@ body {
 
 .active {
   background-color: rgb(67, 66, 80);
+  border: 1px solid #434250 !important;
 }
+
 .menu a:hover {
   background: linear-gradient(
     320deg,

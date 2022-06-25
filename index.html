@@ -28,7 +28,7 @@
     >
       <div
         class="panel border border-dark rounded-4 overflow-hidden"
-        style="height: 94vh; width: 1600px"
+        style="height: 1000px; width: 1600px"
       >
         <div class="row h-100 mx-0">
           <div
@@ -41,7 +41,7 @@
               <p class="h1 fw-bold">3:45</p>
               <p class="mb-0">25.06.2022</p>
             </section>
-            <section class="menu text-center py-3">
+            <nav class="menu text-center py-3">
               <a
                 href="index.html"
                 class="active text-decoration-none text-white d-block border rounded-4 px-5 py-3 mb-3"
@@ -63,7 +63,7 @@
                 <i class="bi bi-people-fill fs-1"></i>
                 <p class="text-uppercase mb-2">Users</p>
               </a>
-            </section>
+            </nav>
             <section
               class="mini-footer d-flex flex-column justify-content-center align-items-center"
             >
@@ -71,10 +71,117 @@
               <p class="mb-0">&copy Copyright 2022</p>
             </section>
           </div>
-          <div class="col-10 panel-right"></div>
+          <div class="col-10 panel-right text-light">
+            <div class="row text-center px-5">
+              <div class="col-9 main-statistics pt-5">
+                <h2 class="text-uppercase mb-4">Statistics</h2>
+
+                <div class="row">
+                  <div class="col-4">
+                    <div class="border rounded-4 p-4">
+                      <h4 class="mb-3 fw-normal">Posts</h4>
+                      <p class="mb-1 fw-light">In total: 4 565</p>
+                      <p class="mb-0 fw-light">This month: 345</p>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="border rounded-4 p-4">
+                      <h4 class="mb-3 fw-normal">Topics</h4>
+                      <p class="mb-1 fw-light">In total: 2 567</p>
+                      <p class="mb-0 fw-light">This month: 5</p>
+                    </div>
+                  </div>
+                  <div class="col-4">
+                    <div class="border rounded-4 p-4">
+                      <h4 class="mb-3 fw-normal">Users</h4>
+                      <p class="mb-1 fw-light">In total: 5 456</p>
+                      <p class="mb-0 fw-light">This month: 45</p>
+                    </div>
+                  </div>
+                </div>
+                <!-- from Apexcharts -->
+                <div id="chart" class="graph py-5 text-dark"></div>
+              </div>
+              <div class="col-3"></div>
+            </div>
+          </div>
         </div>
       </div>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/apexcharts"></script>
+    <script>
+      var options = {
+        series: [
+          {
+            name: "Posts",
+            data: [3167, 3289, 3478, 3567, 3678, 3876, 4018, 4321, 4565],
+          },
+          {
+            name: "Topics",
+            data: [1034, 1385, 1401, 1646, 1850, 1931, 2154, 2362, 2567],
+          },
+          {
+            name: "Users",
+            data: [3543, 3765, 3987, 4234, 4567, 4789, 5145, 5342, 5456],
+          },
+        ],
+
+        chart: {
+          type: "bar",
+          height: 350,
+          foreColor: "#fff",
+        },
+
+        plotOptions: {
+          bar: {
+            horizontal: false,
+            columnWidth: "55%",
+            endingShape: "rounded",
+          },
+        },
+        dataLabels: {
+          enabled: false,
+        },
+        stroke: {
+          show: true,
+          width: 2,
+          colors: ["transparent"],
+        },
+        xaxis: {
+          categories: [
+            "Feb",
+            "Mar",
+            "Apr",
+            "May",
+            "Jun",
+            "Jul",
+            "Aug",
+            "Sep",
+            "Oct",
+          ],
+        },
+        yaxis: {
+          title: {
+            text: "amount",
+          },
+        },
+        fill: {
+          opacity: 1,
+        },
+        tooltip: {
+          y: {
+            formatter: function (val) {
+              return "$ " + val + " thousands";
+            },
+          },
+        },
+
+        colors: ["#FFB407", "#F0504A", "#7600A1"],
+      };
+
+      var chart = new ApexCharts(document.querySelector("#chart"), options);
+      chart.render();
+    </script>
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
