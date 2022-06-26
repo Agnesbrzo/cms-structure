@@ -3,7 +3,7 @@ body {
 }
 
 .main-left {
-  width: 1800px;
+  width: 100vw;
   height: 1200px;
 }
 
@@ -37,4 +37,29 @@ body {
 .page-link:hover {
   background-color: rgba(255, 255, 255, 0.26);
   color: white;
+}
+
+section.section-title p {
+  font-size: 0.85rem;
+}
+
+section.section-title h4 {
+  text-shadow: 0 0 11px white;
+}
+
+section.section-title i {
+  font-weight: bold;
+}
+
+.bi-gender-female {
+  text-shadow: 0 0 10px white;
+  color: rgba(252, 176, 69, 1);
+}
+.bi-gender-male {
+  text-shadow: 0 0 10px white;
+  color: #f0504a;
+}
+
+.users-number {
+  text-shadow: 0 0 6px white;
 }
