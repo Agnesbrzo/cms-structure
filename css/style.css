@@ -63,3 +63,12 @@ section.section-title i {
 .users-number {
   text-shadow: 0 0 6px white;
 }
+
+.icon-user {
+  color: #6c757d;
+  transition: 0.3s;
+}
+.icon-user:hover {
+  color: rgb(182, 182, 182);
+  transform: scale(1.1);
+}
