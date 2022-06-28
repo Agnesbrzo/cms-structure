@@ -91,7 +91,11 @@
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Natus aliquam officia laudantium deleniti quo debitis...
                       </p>
-                      <a href="#" class="btn btn-outline-warning my-2"
+                      <a
+                        href="#"
+                        class="btn btn-outline-warning my-2"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal1"
                         >See more</a
                       >
                     </div>
@@ -106,7 +110,11 @@
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Natus aliquam officia laudantium deleniti quo debitis...
                       </p>
-                      <a href="#" class="btn btn-outline-warning my-2"
+                      <a
+                        href="#"
+                        class="btn btn-outline-warning my-2"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal2"
                         >See more</a
                       >
                     </div>
@@ -124,7 +132,11 @@
                         Lorem ipsum dolor sit amet consectetur adipisicing elit.
                         Natus aliquam officia laudantium deleniti quo debitis...
                       </p>
-                      <a href="#" class="btn btn-outline-warning my-2"
+                      <a
+                        href="#"
+                        class="btn btn-outline-warning my-2"
+                        data-bs-toggle="modal"
+                        data-bs-target="#exampleModal3"
                         >See more</a
                       >
                     </div>
@@ -166,6 +178,189 @@
                 </div>
               </div>
             </section>
+            <section class="find-post text-center">
+              <p
+                class="h4 mt-5 fw-bold mx-5 mb-1"
+                style="color: rgb(144, 157, 192)"
+              >
+                Find post
+              </p>
+
+              <div class="container">
+                <div class="input-group mt-4 px-4">
+                  <button
+                    class="btn btn-outline-secondary dropdown-toggle"
+                    type="button"
+                    data-bs-toggle="dropdown"
+                    aria-expanded="false"
+                  >
+                    Search by
+                  </button>
+                  <ul class="dropdown-menu">
+                    <li><a class="dropdown-item" href="#">User's name</a></li>
+                    <li>
+                      <a class="dropdown-item" href="#">Post title</a>
+                    </li>
+                    <li>
+                      <a class="dropdown-item" href="#">Date</a>
+                    </li>
+                  </ul>
+                  <input
+                    type="text"
+                    class="form-control"
+                    aria-label="Text input with dropdown button"
+                  />
+                  <button class="btn btn-outline-secondary" type="button">
+                    Search
+                  </button>
+                </div>
+              </div>
+            </section>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="exampleModal1"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-secondary text-light border border-2">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Title of post</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p class="fw-light mb-2">#example-topic</p>
+            <h3 class="fw-bold">Content:</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quam
+              fuga deserunt vero dicta a sit autem accusamus aut? Ipsa tenetur
+              cumque quos doloribus commodi consectetur eum libero itaque,
+              reiciendis ipsum impedit quam veritatis officia eveniet delectus
+              cupiditate? Facere nulla, esse, culpa cupiditate impedit enim
+              recusandae officia provident omnis dolorum expedita nesciunt
+              similique quidem suscipit facilis sequi doloremque tempore
+              reprehenderit? Consequuntur quisquam culpa vero soluta dolores
+              recusandae, hic, itaque corrupti eum voluptas fuga repellat eaque
+              maiores unde quis dolorem magnam ipsa nemo magni ea maxime id
+              quas. Veniam voluptate temporibus sint sed deserunt obcaecati
+              eveniet alias, error iusto odio deleniti!
+            </p>
+            <button class="btn btn-outline-light">Edit</button>
+            <button class="btn btn-outline-light">Save changes</button>
+            <button class="btn btn-outline-light">Delete</button>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-dark" data-bs-dismiss="modal">
+              Close
+            </button>
+            <button type="button" class="btn btn-warning">Save</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="exampleModal2"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-secondary text-light border border-2">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Title of post</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p class="fw-light mb-2">#example-topic</p>
+            <h3 class="fw-bold">Content:</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quam
+              fuga deserunt vero dicta a sit autem accusamus aut? Ipsa tenetur
+              cumque quos doloribus commodi consectetur eum libero itaque,
+              reiciendis ipsum impedit quam veritatis officia eveniet delectus
+              cupiditate? Facere nulla, esse, culpa cupiditate impedit enim
+              recusandae officia provident omnis dolorum expedita nesciunt
+              similique quidem suscipit facilis sequi doloremque tempore
+              reprehenderit? Consequuntur quisquam culpa vero soluta dolores
+              recusandae.
+            </p>
+            <button class="btn btn-outline-light">Edit</button>
+            <button class="btn btn-outline-light">Save changes</button>
+            <button class="btn btn-outline-light">Delete</button>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-dark" data-bs-dismiss="modal">
+              Close
+            </button>
+            <button type="button" class="btn btn-warning">Save</button>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div
+      class="modal fade"
+      id="exampleModal3"
+      tabindex="-1"
+      aria-labelledby="exampleModalLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content bg-secondary text-light border border-2">
+          <div class="modal-header">
+            <h5 class="modal-title" id="exampleModalLabel">Title of post</h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="modal"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="modal-body">
+            <p class="fw-light mb-2">#example-topic</p>
+            <h3 class="fw-bold">Content:</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quis quam
+              fuga deserunt vero dicta a sit autem accusamus aut? Ipsa tenetur
+              cumque quos doloribus commodi consectetur eum libero itaque,
+              reiciendis ipsum impedit quam veritatis officia eveniet delectus
+              cupiditate? Facere nulla, esse, culpa cupiditate impedit enim
+              recusandae officia provident omnis dolorum expedita nesciunt
+              similique quidem suscipit facilis sequi doloremque tempore
+              reprehenderit? Consequuntur quisquam culpa vero soluta dolores
+              recusandae, hic, itaque corrupti eum voluptas fuga repellat eaque
+              maiores unde quis dolorem magnam.
+            </p>
+            <p>
+              Voluptas fuga repellat eaque maiores unde quis dolorem magnam.
+            </p>
+            <button class="btn btn-outline-light">Edit</button>
+            <button class="btn btn-outline-light">Save changes</button>
+            <button class="btn btn-outline-light">Delete</button>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-dark" data-bs-dismiss="modal">
+              Close
+            </button>
+            <button type="button" class="btn btn-warning">Save</button>
           </div>
         </div>
       </div>
